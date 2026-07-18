@@ -29,7 +29,7 @@ Download the [release](https://github.com/Beinsezii/NieR-Cursors/releases) archi
 3. Archive files will be created for the:
     1. Windows theme: NieR_Cursors_Windows_YYYY-mm-dd.zip
     2. XCursor theme: NieR_Cursors_YYYY-mm-dd.tar.xz
-    3. Hyprcursor theme: NieR_Hyprcursors_YYYY-mm-dd.zip
+    3. Hyprcursor theme: NieR_Hyprcursors_YYYY-mm-dd.tar.xz
 
 
 ## State
