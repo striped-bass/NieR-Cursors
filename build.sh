@@ -61,9 +61,9 @@ genblend(){
 
     wait
 
-    # xcursorgen $xcursorin ./icons/nier_cursors/cursors/$1
+    # xcursorgen $xcursorin ./icons/nier_xcursors/cursors/$1
 
-    cd ./icons/nier_cursors/cursors/
+    cd ./icons/nier_xcursors/cursors/
     for link in ${@:5}
     do
         ln -sf $1 ./$link
@@ -118,7 +118,7 @@ genwindows(){
 }
 
 
-mkifnot ./working/ ./icons/ ./icons/nier_cursors/ ./icons/nier_cursors/cursors
+mkifnot ./working/ ./icons/ ./icons/nier_xcursors/ ./icons/nier_xcursors/cursors
 
 
 # cursor corner, inverted
@@ -192,12 +192,12 @@ genpreviews 8 Cursor_Error
 # inherits Adwaita since that's standard-issue and should be a good fallback
 echo """[Icon Theme]
 Name=NieR Cursors
-Inherits=Adwaita""" > ./icons/nier_cursors/index.theme
+Inherits=Adwaita""" > ./icons/nier_xcursors/index.theme
 
 # Hyprcursor
-hyprcursor-util --extract ./icons/nier_cursors
-hyprcursor-util --create ./icons/extracted_nier_cursors
-rm -r ./icons/extracted_nier_cursors
+hyprcursor-util --extract ./icons/nier_xcursors
+hyprcursor-util --create ./icons/extracted_nier_xcursors
+rm -r ./icons/extracted_nier_xcursors
 mv "./icons/theme_Extracted Theme" "./icons/nier_hyprcursors"
 rm ./icons/nier_hyprcursors/manifest.hl
 echo 'name = NierTheme
