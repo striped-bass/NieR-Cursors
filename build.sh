@@ -61,12 +61,12 @@ genblend(){
 
     wait
 
-    xcursorgen $xcursorin ./icons/nier_cursors/nier/$1
+    # xcursorgen $xcursorin ./icons/nier_cursors/cursors/$1
 
     cd ./icons/nier_cursors/cursors/
     for link in ${@:5}
     do
-        ln -sf ../nier/$1 ./$link
+        ln -sf $1 ./$link
     done
     cd ../../../
 }
@@ -118,7 +118,7 @@ genwindows(){
 }
 
 
-mkifnot ./working/ ./icons/ ./icons/nier_cursors/ ./icons/nier_cursors/nier/ ./icons/nier_cursors/cursors
+mkifnot ./working/ ./icons/ ./icons/nier_cursors/ ./icons/nier_cursors/cursors
 
 
 # cursor corner, inverted
