@@ -9,7 +9,7 @@
 <img width="64" src="./previews/Crosshair.png" />
 <img width="64" src="./previews/Targeter.png" />
 </div>
-Adwaita is a fallback for those not included. This can be changed in the "index.theme" file present in the built theme.
+Adwaita is a fallback for those not included in the XCursor theme. This can be changed in the "index.theme" file present in the built theme.
 
 ## Installing
 Download the [release](https://github.com/Beinsezii/NieR-Cursors/releases) archive for your operating system
@@ -32,7 +32,7 @@ Download the [release](https://github.com/Beinsezii/NieR-Cursors/releases) archi
 NieR_Cursors_YYYY-mm-dd.tar.xz 
     2. Windows theme: 
 NieR_Cursors_Windows_YYYY-mm-dd.zip
-    3.  Hyprcursor theme: NieR_Cursors_YYYY-mm-dd_Hyprcursor
+    3.  Hyprcursor theme: NieR_Hyprcursor_YYYY-mm-dd.zip
 
 ## State
  - \+ Cursors for every type of mouse event I come across
