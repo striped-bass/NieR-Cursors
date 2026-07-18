@@ -9,19 +9,28 @@
 <img width="64" src="./previews/Crosshair.png" />
 <img width="64" src="./previews/Targeter.png" />
 </div>
-Adwaita is a fallback for those not included. This can be changed in the "index.theme" file present in the built theme.
+Adwaita is the fallback for those not included in the XCursor theme. This can be changed in the "index.theme" file present in the built theme.
 
 ## Installing
 Download the [release](https://github.com/Beinsezii/NieR-Cursors/releases) archive for your operating system
- - Linux: Unpack the archive and put the folder in your user icons folder (usually `~/.icons/`), then pick the cursor theme with whatever desktop/theme manager you use.
+ - Linux: Unpack the XCursor or Hyprcursor archive and put the folder in your user icons folder (usually `~/.icons/`), then pick the cursor theme with whatever desktop/theme manager you use.
      - Arch Linux has a 3rd-party [AUR package](https://aur.archlinux.org/packages/nier-cursors-bin) available to install the cursors system wide.
  - Windows: Unzip the archive somewhere then right-click 'install.inf' and select 'install'. Right now, not every cursor has a windows equivalent, so when the dialogue box shows up complaining about "File not found", just close it and move on. Finally, go to control-panel -> mouse -> pointers and select "NieR Cursors" as your theme.
 
 ## Building From Source
- 1. Have Python, Bash, XCursorgen, ImageMagick, Blender 2.83+, and bc installed
+ 1. Have Python, Bash, XCursorgen, ImageMagick, Blender 2.83+, bc, and Hyprcursor installed
  2. Clone the repository
  3. Run `build.sh` file
- 4. A folder will appear called 'icons' that has the Linux and Windows themes inside.
+ 4. A folder will appear called 'icons' that has the Linux XCursor and Hyprcursor theme and Windows theme inside.
+
+## Creating Release
+1. [Build from source](#building-from-source)
+2. Run `create_release.sh` file
+3. Archive files will be created for the:
+    1. Windows theme: NieR_Cursors_Windows_YYYY-mm-dd.zip
+    2. XCursor theme: NieR_Cursors_YYYY-mm-dd.tar.xz
+    3. Hyprcursor theme: NieR_Hyprcursors_YYYY-mm-dd.zip
+
 
 ## State
  - \+ Cursors for every type of mouse event I come across
