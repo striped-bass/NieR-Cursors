@@ -18,7 +18,7 @@ Download the [release](https://github.com/Beinsezii/NieR-Cursors/releases) archi
  - Windows: Unzip the archive somewhere then right-click 'install.inf' and select 'install'. Right now, not every cursor has a windows equivalent, so when the dialogue box shows up complaining about "File not found", just close it and move on. Finally, go to control-panel -> mouse -> pointers and select "NieR Cursors" as your theme.
 
 ## Building From Source
- 1. Have Python, Bash, XCursorgen, ImageMagick Blender 2.83+ installed
+ 1. Have Python, Bash, XCursorgen, ImageMagick, Blender 2.83+, and bc installed
  2. Clone the repository
  3. Run `build.sh` file
  4. A folder will appear called 'icons' that has the Linux and Windows themes inside.
