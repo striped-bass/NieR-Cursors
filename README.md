@@ -21,14 +21,14 @@ Download the [release](https://github.com/Beinsezii/NieR-Cursors/releases) archi
  1. Have Python, Bash, XCursorgen, ImageMagick, Blender 2.83+, bc, and Hyprcursor installed
  2. Clone the repository
  3. Run `build.sh` file
- 4. A folder will appear called 'icons' that has the Linux XCursor and Hyprcursor theme and Windows theme inside.
+ 4. A folder will appear called 'icons' that has the Linux XCursor, Linux Hyprcursor, and Windows themes inside.
 
 ## Creating Release
 1. [Build from source](#building-from-source)
 2. Run `create_release.sh` file
 3. Archive files will be created for the:
     1. Windows theme: NieR_Cursors_Windows_YYYY-mm-dd.zip
-    2. XCursor theme: NieR_Cursors_YYYY-mm-dd.tar.xz
+    2. XCursor theme: NieR_XCursors_YYYY-mm-dd.tar.xz
     3. Hyprcursor theme: NieR_Hyprcursors_YYYY-mm-dd.tar.xz
 
 
@@ -41,4 +41,4 @@ Download the [release](https://github.com/Beinsezii/NieR-Cursors/releases) archi
 ## F.A.Q.
 Question|Answer
 ---|---
-Why Blender? Inkscape or Illustrator would do this and that and everything better|Inkscape 0.9X doesn't support the cursor workflow of sharing assets and non-destructive modification. Inkscape 1.0 beta *does* but if I had $100 for every time it crashed or hanged I would be well on my way to taking that computer science class I can't afford. Blender with it's new Eevee render is a swiss army knife of artwork and has only crashed like 4 times so far overall so it's hundreds of times more stable. There's an unmaintained Inkscape branch in this git repo for the brave and curious.
+Why Blender? Inkscape or Illustrator would do this and that and everything better|Inkscape 0.9X doesn't support the cursor workflow of sharing assets and non-destructive modification. Inkscape 1.0 beta *does* but if I had $100 for every time it crashed or hanged I would be well on my way to taking that computer science class I can't afford. Blender with its new Eevee render is a swiss army knife of artwork and has only crashed like 4 times so far overall so it's hundreds of times more stable. There's an unmaintained Inkscape branch in this git repo for the brave and curious.
