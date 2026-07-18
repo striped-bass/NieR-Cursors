@@ -125,6 +125,7 @@ mkifnot ./working/ ./icons/ ./icons/nier_cursors/ ./icons/nier_cursors/cursors
 cc=0.05
 cci=$(math "1-$cc")
 
+# XCursor
 genblend Cursor_UL $cc $cc 1 left_ptr arrow default top_left_arrow &
 genblend Cursor_UR $cci $cc 1 right_ptr draft_large draft_small &
 genblend Cursor_L $cc 0.5 1 sb_left_arrow &
@@ -192,6 +193,17 @@ genpreviews 8 Cursor_Error
 echo """[Icon Theme]
 Name=NieR Cursors
 Inherits=Adwaita""" > ./icons/nier_cursors/index.theme
+
+# Hyprcursor
+hyprcursor-util --extract ./icons/nier_cursors
+hyprcursor-util --create ./icons/extracted_nier_cursors
+rm -r ./icons/extracted_nier_cursors
+mv "./icons/theme_Extracted Theme" "./icons/nier_hyprcursors"
+rm ./icons/nier_hyprcursors/manifest.hl
+echo 'name = NierTheme
+description = Hyprcursor theme based on NieR Automata
+version = 0.1
+cursors_directory = hyprcursors' > ./icons/nier_hyprcursors/manifest.hl
 
 # Windows
 genwindows Cursor_UL $cc $cc 1 normal-select &
